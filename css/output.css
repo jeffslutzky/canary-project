@@ -1,0 +1,275 @@
+* {
+  box-sizing: content-box; }
+
+body {
+  font: 18px/28px "Graphik";
+  color: #000;
+  margin: 0; }
+
+.container {
+  max-width: 1400px; }
+
+.links {
+  display: inline; }
+
+.navbar {
+  font-weight: 300;
+  padding: 15px 120px;
+  border-bottom: 1px solid #e8e8e8; }
+
+.canary-logo {
+  display: inline;
+  padding-right: 40px; }
+  .canary-logo img {
+    vertical-align: middle; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.nav-link {
+  display: inline;
+  padding: 0px 20px;
+  font: 15px/20px "Graphik";
+  font-weight: 300; }
+
+.login {
+  float: right;
+  color: gray;
+  font: 15px/20px "Graphik";
+  font-weight: 300;
+  padding-top: 6px; }
+
+.headline-container {
+  display: flex; }
+
+h1 {
+  font: 55px/60px "Graphik";
+  font-weight: 300;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0px; }
+
+h2 {
+  font: 45px/56px "Graphik";
+  font-weight: 300;
+  margin: auto;
+  text-align: center; }
+
+h4 {
+  font: 16px/25px "Graphik";
+  font-weight: 200;
+  width: 30%;
+  margin: auto; }
+
+.first-box {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0px; }
+
+.first-box-left {
+  width: 35%;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.first-box-right {
+  width: 65%; }
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px; }
+  .logos img {
+    padding: 10px;
+    min-width: 140px;
+    max-width: 33%;
+    width: 100%; }
+
+.green-text {
+  font: 16px/28px "Graphik";
+  color: #4eae87;
+  padding: 20px 0px;
+  font-weight: 100; }
+  .green-text img {
+    padding-left: 20px; }
+
+.second-box {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0px; }
+
+.second-box-left {
+  width: 65%;
+  margin-left: 5%; }
+
+.second-box-right {
+  width: 35%;
+  padding-left: 5%;
+  padding-right: 8%; }
+
+.third-box {
+  background-color: #f8f8f8;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0px 80px 0px; }
+
+.insurance-logo-row {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px; }
+
+.insurance-logo-box {
+  background-color: #fff;
+  border: 1px #e8e8e8 solid;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px #e8e8e8;
+  width: 15%;
+  padding: 75px;
+  align-content: center; }
+  .insurance-logo-box h4 {
+    width: 100%;
+    color: black;
+    padding-top: 5%; }
+
+.hover-details h4 {
+  color: darkgray; }
+
+.hover-or-contact {
+  display: none; }
+
+.below-logo-box {
+  padding-top: 80px; }
+
+.footer {
+  background-color: #48ccdf;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  align-items: center; }
+
+.contact-box {
+  color: #fff;
+  flex: 1;
+  text-align: center; }
+  .contact-box h4 {
+    width: 80%;
+    padding: 25px; }
+
+h3 {
+  font: 18px/28px "Graphik";
+  font-weight: 100;
+  margin: 0; }
+
+.questions {
+  font: 24px/28px "Graphik";
+  font-weight: 100;
+  margin: 0; }
+
+.get-in-touch {
+  background-color: #fff;
+  color: #48ccdf;
+  padding: 20px;
+  border-radius: 35px;
+  width: 200px;
+  margin: auto; }
+
+@media screen and (max-width: 1250px) {
+  .logos {
+    flex-wrap: wrap; } }
+@media screen and (max-width: 400px) {
+  img {
+    display: none; }
+
+  .navbar {
+    display: block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px; }
+    .navbar img {
+      display: initial; }
+
+  .canary-logo {
+    padding: 0;
+    display: block; }
+    .canary-logo img {
+      margin: 0 auto;
+      display: block; }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5%; }
+
+  .nav-link {
+    padding: 10px 18px 10px;
+    display: inline; }
+
+  .logos img {
+    display: initial;
+    width: 40%; }
+
+  .first-box {
+    margin: 0; }
+
+  .first-box-left {
+    margin-left: 0%;
+    width: 100%; }
+
+  .first-box-right {
+    width: 0%; }
+
+  .second-box {
+    margin: 10% 0 0 0; }
+
+  .second-box-left {
+    width: 0%;
+    margin: 0; }
+
+  .second-box-right {
+    width: 100%;
+    padding: 0 5% 0 5%; }
+
+  .third-box {
+    padding-bottom: 50px; }
+    .third-box img {
+      display: initial; }
+
+  .below-logo-box {
+    padding-top: 50px; }
+
+  .login {
+    display: none; }
+
+  .insurance-logo-row {
+    flex-direction: column;
+    padding-top: 20px; }
+
+  .insurance-logo-box {
+    margin: 5%;
+    padding: 25% 10%;
+    width: 70%; }
+    .insurance-logo-box h4 {
+      padding-top: 5%;
+      padding-bottom: 5%; }
+
+  .hover-details {
+    display: none; }
+
+  .hover-or-contact {
+    display: inline; }
+
+  .contact-box {
+    padding: 20%; }
+
+  h1, h2 {
+    font: 30px/40px "Graphik";
+    font-weight: 300;
+    width: 78%; }
+
+  h4 {
+    width: 75%; } }
+
+/*# sourceMappingURL=output.css.map */

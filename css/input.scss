@@ -1,3 +1,5 @@
+@import 'reset';
+
 $main-font: 'Graphik';
 $contact-color: #48ccdf;
 $border-line-color: #e8e8e8;
@@ -9,7 +11,7 @@ $border-line-color: #e8e8e8;
 body {
   font: 18px/28px $main-font;
   color: #000;
-  margin: 0;
+  // margin: 0;
 }
 
 .container {
@@ -50,7 +52,7 @@ img {
 .login {
   float: right;
   color: gray;
-  font: 15px/20px "Graphik";
+  font: 15px/20px $main-font;
   font-weight: 300;
   padding-top: 6px;
 }
@@ -59,32 +61,39 @@ img {
   display: flex;
 }
 
+.headings {
+  margin: auto;
+  text-align: center;
+}
+
 h1 {
+  @extend .headings;
   font: 55px/60px $main-font;
   font-weight: 300;
   width: 500px;
-  margin: auto;
-  text-align: center;
   padding: 40px 0px;
 }
 
 h2 {
+  @extend .headings;
   font: 45px/56px $main-font;
   font-weight: 300;
-  margin: auto;
-  text-align: center;
 }
 
 h4 {
+  @extend .headings;
   font: 16px/25px $main-font;
   font-weight: 200;
   width: 30%;
-  margin: auto;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
 }
 
 .first-box {
-  display: flex;
-  justify-content: center;
+  @extend .box;
   margin: 70px 0px;
 }
 
@@ -124,8 +133,7 @@ h4 {
 }
 
 .second-box {
-  display: flex;
-  justify-content: center;
+  @extend .box;
   margin: 70px 0px;
 }
 
